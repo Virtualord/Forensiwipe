@@ -1,0 +1,277 @@
+:root {
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+    color: #172033;
+    background: #f3f6f9;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+.shell {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+}
+aside {
+    background: #101b2b;
+    color: #eaf0f7;
+    padding: 26px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 22px;
+    font-weight: 750;
+}
+.brand span {
+    color: #53c6b9;
+}
+.tagline {
+    font-size: 11px;
+    color: #9eafc3;
+    margin: 0 0 22px;
+}
+.nav {
+    border: 0;
+    background: transparent;
+    color: #c3cfdd;
+    text-align: left;
+    padding: 11px 12px;
+    border-radius: 7px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.nav:hover,
+.nav.active {
+    background: #1e3148;
+    color: white;
+}
+.safe-side {
+    margin-top: auto;
+    border: 1px solid #365270;
+    background: #17283b;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 11px;
+    color: #83d9cb;
+    line-height: 1.7;
+}
+.safe-side small {
+    display: block;
+    color: #a6b7c9;
+    line-height: 1.35;
+}
+main {
+    max-width: 1500px;
+    width: 100%;
+    padding: 34px;
+    margin: auto;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+h1 {
+    margin: 2px 0;
+    font-size: 27px;
+}
+.eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    color: #64748b;
+    text-transform: uppercase;
+    margin: 0 0 9px;
+}
+.grid {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.three {
+    grid-template-columns: repeat(3, 1fr);
+}
+.card {
+    background: #fff;
+    border: 1px solid #dce4ec;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 2px #17203308;
+}
+.card p {
+    color: #526274;
+    line-height: 1.5;
+}
+.success {
+    color: #087e70;
+    font-size: 18px;
+}
+.danger,
+.error {
+    color: #bd2638;
+}
+.notice {
+    background: #fff5dc;
+    border-left: 3px solid #d99520;
+    padding: 10px 12px;
+    font-size: 13px;
+}
+.error {
+    background: #fff0f1;
+    border: 1px solid #f1c2c9;
+    padding: 11px;
+    border-radius: 7px;
+    margin-bottom: 16px;
+}
+button,
+select,
+input,
+textarea {
+    font: inherit;
+    border-radius: 6px;
+}
+button {
+    background: #087e70;
+    color: white;
+    border: 0;
+    padding: 10px 14px;
+    cursor: pointer;
+    margin: 10px 8px 0 0;
+}
+button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+.secondary {
+    background: white;
+    color: #1c3954;
+    border: 1px solid #b9c6d3;
+    margin: 0;
+}
+input,
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #bdc9d5;
+    padding: 10px;
+    background: white;
+}
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+}
+th {
+    text-align: left;
+    color: #64748b;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+th,
+td {
+    padding: 11px 8px;
+    border-bottom: 1px solid #e5eaf0;
+}
+.truncate {
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.hash {
+    font-family: ui-monospace, SFMono-Regular, monospace;
+    font-size: 11px;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.pill {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 6px;
+    border-radius: 10px;
+    background: #e9eef3;
+    color: #43556a;
+}
+.pill.completed {
+    background: #def4ef;
+    color: #067566;
+}
+.pill.failed {
+    background: #fce6e8;
+    color: #b42332;
+}
+.pill.running,
+.pill.validating,
+.pill.verifying {
+    background: #fff2d5;
+    color: #996014;
+}
+.bar {
+    height: 6px;
+    width: 90px;
+    background: #e9eef3;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 6px;
+    overflow: hidden;
+}
+.bar i {
+    display: block;
+    background: #0b8e7f;
+    height: 100%;
+}
+.workflow {
+    max-width: 840px;
+}
+.empty {
+    text-align: center;
+    color: #718096;
+    padding: 30px;
+}
+@media (max-width: 850px) {
+    .shell {
+        grid-template-columns: 1fr;
+    }
+    aside {
+        min-height: auto;
+    }
+    .safe-side {
+        display: none;
+    }
+    .three {
+        grid-template-columns: 1fr;
+    }
+    main {
+        padding: 20px;
+    }
+    .nav {
+        display: inline-flex;
+        width: auto;
+    }
+    .tagline {
+        display: none;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}

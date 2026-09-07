@@ -1,0 +1,32 @@
+# ForensiWipe backend dependencies
+# Pin exact versions for reproducibility and supply-chain safety.
+
+# ── Web framework ─────────────────────────────────────────────────────────────
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+websockets==13.1
+python-multipart==0.0.12
+
+# ── Configuration ─────────────────────────────────────────────────────────────
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+# ── Database ──────────────────────────────────────────────────────────────────
+# SQLite is provided by Python's standard library. No external driver required.
+
+# ── System / platform utilities ───────────────────────────────────────────────
+psutil==6.1.0
+
+# ── Cryptography / hashing ────────────────────────────────────────────────────
+# hashlib is stdlib — no extra dependency needed
+
+# ── Image handling (Module 2 metadata sanitisation, Module 3 carving) ─────────
+Pillow==11.0.0
+
+# ── Report generation (Module PDF reports — Phase 4) ──────────────────────────
+reportlab==4.2.5
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==8.3.4
+pytest-asyncio==0.24.0
+httpx==0.27.2       # ASGI test client for FastAPI

@@ -1,0 +1,41 @@
+{
+  "audit_records": [
+    {
+      "action": "REPORT_SMOKE",
+      "current_hash": "c0ca7127f105069c1122df31f9bcee017776ca0b05421b0f452164a9611b89f6",
+      "device_identifier": null,
+      "metadata": "{}",
+      "module": "SYSTEM",
+      "operation_finished_at": null,
+      "operation_id": "REPORT-SMOKE-001",
+      "operation_started_at": null,
+      "operator_id": "forensiwipe-operator",
+      "previous_hash": "511a82cfc2e80b643355a67b155cf5eefed7c27a7074533e58b48d652f4910cc",
+      "result": "SUCCESS",
+      "sequence": 2,
+      "standard": null,
+      "target": "demo",
+      "timestamp": "2026-09-02T16:03:25.322750+00:00",
+      "verification_result": null
+    }
+  ],
+  "audit_verification": {
+    "checked_records": 2,
+    "details": [
+      "Sequence 1: OK  (511a82cfc2e80b64...)",
+      "Sequence 2: OK  (c0ca7127f105069c...)"
+    ],
+    "first_invalid_operation_id": null,
+    "first_invalid_sequence": null,
+    "reason": "All records verified \u2014 chain is intact.",
+    "valid": true
+  },
+  "generated_at": "2026-09-02T16:03:25.331474+00:00",
+  "limitations": [
+    "Audit verification assesses the recorded hash chain.",
+    "Physical-media sanitization guarantees depend on media and method."
+  ],
+  "operation": null,
+  "product": "ForensiWipe \u2014 Digital Forensics & Secure Sanitization",
+  "report_version": "1.0"
+}

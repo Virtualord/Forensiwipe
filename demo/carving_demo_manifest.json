@@ -1,0 +1,42 @@
+{
+  "image_path": "/home/aditya/forensiwipe/demo/carving_demo.img",
+  "size_mb": 8,
+  "files": [
+    {
+      "label": "jpeg_001",
+      "file_type": "JPEG",
+      "offset": 512,
+      "size": 173,
+      "sha256": "3d12ae9b38c1c235d44fa16d77e2a5c4bb9b7ea8da4b1848370021ef9140e96b"
+    },
+    {
+      "label": "png_001",
+      "file_type": "PNG",
+      "offset": 8192,
+      "size": 69,
+      "sha256": "64abf93fb4c16b4258aa6eff5660a6b97b013a1b9c0cc877fcceb14c6764680f"
+    },
+    {
+      "label": "pdf_001",
+      "file_type": "PDF",
+      "offset": 16384,
+      "size": 553,
+      "sha256": "46e5e3514b1d98134f98f1c02b587945ca4e2733c9053d079ddf2d25316b6995"
+    },
+    {
+      "label": "docx_001",
+      "file_type": "DOCX",
+      "offset": 24576,
+      "size": 1131,
+      "sha256": "be607b416ffa91b3028db6902ee880fe1db0611088df1ceda3f40c2639ee33c1"
+    },
+    {
+      "label": "jpeg_002",
+      "file_type": "JPEG",
+      "offset": 32768,
+      "size": 173,
+      "sha256": "540eacbe26d6b9dbcaa7d1f0b569d9be282fcb3c3e12d7838f206fd2d44595cb"
+    }
+  ],
+  "image_sha256": "ca1413c0947e880ff6f84b26375272b343d48574d2f898287d4d95d49cd2c039"
+}
